@@ -1,0 +1,54 @@
+:root {
+  --bg: #deb8f5;
+  --bgSoft: #2d2b42;
+  --text: white;
+  --textSoft: #e5e5e5;
+  --btn: #3673fd;
+}
+
+body {
+  background: hsla(266, 75%, 55%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(266, 75%, 55%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(266, 75%, 55%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(266, 75%, 55%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--text);
+}
+
+*{
+  top:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.navbar{
+  text-align: right;
+}
+
+.container{
+  text-align: left;
+  color:azure;
+  box-sizing: border-box;
+}
