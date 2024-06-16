@@ -1,0 +1,178 @@
+.head {
+  text-align: center;
+}
+
+.msg {
+  font-size: 1.7vw;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  object-fit: contain;
+  width: 100%;
+  height: 10%;
+}
+
+.img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 35vw;
+  height: 25vw;
+  box-shadow: 2px 2px 20px rgb(36, 36, 36);
+}
+
+.textcontainer {
+  flex: 1;
+  padding: 20px;
+  align-self: center;
+  font-size: 2.1vw;
+}
+
+.textcontainer span {
+  display: block;
+  opacity: 0;
+  animation: reveal 0.5s forwards var(--d);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.msgcontainer {
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.msgcontainer span {
+  display: block;
+  opacity: 0;
+  animation: reveal 0.5s forwards var(--d);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.welcome {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 4vw;
+  white-space: nowrap;
+}
+
+.showup {
+  animation: showup 7s forwards;
+}
+
+.later {
+  width: 0px;
+  animation: later 7s forwards;
+}
+
+.later span {
+  margin-left: -355px;
+  animation: slidein 7s forwards;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes later {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 50vw;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 47vw;
+  }
+}
+@media (max-width: 768px) {
+  .imgcontainer {
+    display: none;
+  }
+  .textcontainer {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+  }
+  .msg {
+    font-size: 2.5vw;
+  }
+  .msgcontainer {
+    font-size: 2.7vw;
+  }
+  .welcome {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 640px) {
+  .textcontainer {
+    font-size: 3vw;
+  }
+  .msg {
+    font-size: 2.6vw;
+  }
+  .msgcontainer {
+    font-size: 2.7vw;
+  }
+  .welcome {
+    font-size: 4vw;
+  }
+}

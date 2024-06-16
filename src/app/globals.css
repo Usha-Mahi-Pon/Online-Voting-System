@@ -42,13 +42,3 @@ a{
   text-decoration: none;
   color:inherit;
 }
-
-.navbar{
-  text-align: right;
-}
-
-.container{
-  text-align: left;
-  color:azure;
-  box-sizing: border-box;
-}
