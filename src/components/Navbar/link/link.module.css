@@ -30,3 +30,20 @@
     z-index: 1000;
   }
 }
+.btn {
+  padding: 0.5vw 1.5vw;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+}
+.btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 146, 182) 20%,
+    hsla(266, 75%, 55%, 1) 100%
+  );
+}

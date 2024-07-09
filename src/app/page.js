@@ -15,7 +15,7 @@ export default function Home() {
       </header>
       <div className={styles.container}>
         <div className={styles.imgcontainer}>
-          <Image
+        <Image
             src="/voteimg.jpeg"
             alt=""
             height={500}
@@ -24,7 +24,7 @@ export default function Home() {
           />
         </div>
         <div className={styles.textcontainer}>
-          <div>
+          <div className={styles.textboxes}>
             <span style={{ "--d": "1s" }}>
               Our online voting system provides a secure and
             </span>
@@ -35,6 +35,7 @@ export default function Home() {
               voting for student council, board members, or any
             </span>
             <span style={{ "--d": "2.5s" }}>
+              {" "}
               other election, we ensure your vote is counted fairly
             </span>
             <span style={{ "--d": "3s" }}> and accurately.</span>

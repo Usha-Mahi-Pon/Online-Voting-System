@@ -75,7 +75,7 @@
 .welcome {
   display: inline-block;
   overflow: hidden;
-  font-size: 4vw;
+  font-size: 3.59vw;
   white-space: nowrap;
 }
 
@@ -140,39 +140,75 @@
   }
   100% {
     opacity: 1;
-    width: 47vw;
+    width: 49vw;
   }
 }
+
+@media (max-width: 1024px) {
+  .msg {
+    font-size: 2vw;
+  }
+
+  .img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 42vw;
+    height: 32vw;
+  }
+}
+
 @media (max-width: 768px) {
+  .welcome {
+    font-size: 4.4vw;
+  }
+  .msg {
+    font-size: 2.4vw;
+  }
   .imgcontainer {
     display: none;
   }
   .textcontainer {
     display: flex;
     justify-content: center;
-    font-size: 3vw;
-  }
-  .msg {
-    font-size: 2.5vw;
+    font-size: 3.3vw;
   }
   .msgcontainer {
     font-size: 2.7vw;
   }
-  .welcome {
-    font-size: 4vw;
+
+  @keyframes later {
+    0% {
+      opacity: 0;
+      width: 0px;
+    }
+    20% {
+      opacity: 1;
+      width: 0px;
+    }
+    30% {
+      width: 52vw;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      width: 52vw;
+    }
   }
 }
+
 @media (max-width: 640px) {
-  .textcontainer {
-    font-size: 3vw;
+  .welcome {
+    font-size: 4.6vw;
   }
   .msg {
-    font-size: 2.6vw;
-  }
-  .msgcontainer {
     font-size: 2.7vw;
   }
-  .welcome {
-    font-size: 4vw;
+  .textcontainer {
+    font-size: 3.6vw;
+  }
+  .msgcontainer {
+    font-size: 2.8vw;
   }
 }

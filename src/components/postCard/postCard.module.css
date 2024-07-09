@@ -1,0 +1,38 @@
+.container {
+  padding: 10px;
+  max-width: 400px;
+}
+
+.image {
+  height: auto;
+  max-width: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.textcontainer {
+  color: #fdfdfd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.desc {
+  color: rgba(245, 245, 245, 0.775);
+  font-size: 1.2vw;
+}
+
+@media (max-width: 320px) {
+  .desc {
+    font-size: 5vw;
+  }
+  .image {
+    height: 100px;
+    width: 200px;
+  }
+  .textcontainer {
+    font-size: 6vw;
+  }
+}

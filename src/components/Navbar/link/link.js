@@ -4,21 +4,33 @@ import styles from "./link.module.css";
 import { usePathname } from "next/navigation";
 import Navlink from "./navlink/navlink";
 import { useState } from "react";
+import { handleLogOut } from "@/lib/action";
 
-export default function Links() {
+export default function Links({ session }) {
   const [open, setOpen] = useState(false);
   const links = [
     { title: "Home", path: "/" },
     { title: "Dashboard", path: "/dashboard" },
     { title: "Result", path: "/result" },
-    { title: "Login", path: "/login" },
   ];
   return (
     <div>
       <div className={styles.container}>
         {links.map((item) => {
-          return <Navlink param={item} />;
+          return <Navlink param={item} key={item.title} />;
         })}
+        {session?.user ? (
+          <>
+            {session.user?.isAdmin && (
+              <Navlink param={{ title: "Admin", path: "/admin" }} />
+            )}
+            <form action={handleLogOut}>
+              <button className={styles.btn}>Logout</button>
+            </form>
+          </>
+        ) : (
+          <Navlink param={{ title: "Login", path: "/login" }} />
+        )}
       </div>
       <svg
         className={styles.menuButton}
@@ -45,7 +57,7 @@ export default function Links() {
       {open && (
         <div className={styles.mobileLinks}>
           {links.map((item) => {
-            return <Navlink param={item} />;
+            return <Navlink param={item} key={item.title} />;
           })}
         </div>
       )}

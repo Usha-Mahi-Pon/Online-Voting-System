@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 40px;
+  font-size: 2vh;
+  gap: 20px;
+}
+.form div {
+  width: 100%;
+}
+.form input {
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  outline: none;
+  color: white;
+  font-size: 3vh;
+}
+.form button {
+  background-color: rgba(255, 255, 255, 0.155);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 4vh;
+  margin-left: 30%;
+}
+.form button:hover {
+  background-color: rgba(105, 14, 123, 0.621);
+}
+.form textarea {
+  flex: 1;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  outline: none;
+  color: white;
+  font-size: 4vh;
+}
+.form ::placeholder {
+  font-size: 4vh;
+  color: whitesmoke;
+}
+.title {
+  font-size: 4vh;
+  text-align: center;
+}

@@ -17,3 +17,8 @@
     font-size: 4vw;
   }
 }
+@media (max-width: 320px) {
+  .logo {
+    font-size: 5.2vw;
+  }
+}

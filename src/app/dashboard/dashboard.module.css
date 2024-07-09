@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: inherit;
+  font-size: 3vw;
+}
+.header p {
+  color: rgba(245, 245, 245, 0.775);
+  font-family: inherit;
+  font-size: 1.6vw;
+}
+
+.vote {
+  line-height: 60px;
+  color: #fdfdfd;
+  font-size: 1.5vw;
+  padding: 12px 35px 12px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vote:hover {
+  background-color: white;
+  color: #03a9f4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3.5vw;
+  }
+  .header p {
+    font-size: 2.1vw;
+  }
+  .vote {
+    font-size: 2.2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4vw;
+  }
+  .header p {
+    font-size: 3vw;
+  }
+  .vote {
+    font-size: 3.4vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 6vw;
+  }
+  .header p {
+    font-size: 5vw;
+  }
+  .vote {
+    font-size: 4.4vw;
+  }
+}
+.voted {
+  font-size: 4vh;
+}
