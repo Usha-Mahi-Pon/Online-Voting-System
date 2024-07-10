@@ -9,7 +9,6 @@ export default async function Dashboard() {
   const posts = await getPosts();
   const session = await auth();
   const user = await getUser(session?.user?.id);
-  console.log(user.count);
   return (
     <div>
       <div className={styles.header}>

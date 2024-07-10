@@ -59,6 +59,18 @@ export default function Links({ session }) {
           {links.map((item) => {
             return <Navlink param={item} key={item.title} />;
           })}
+          {session?.user ? (
+            <>
+              {session.user?.isAdmin && (
+                <Navlink param={{ title: "Admin", path: "/admin" }} />
+              )}
+              <form action={handleLogOut}>
+                <button className={styles.btn}>Logout</button>
+              </form>
+            </>
+          ) : (
+            <Navlink param={{ title: "Login", path: "/login" }} />
+          )}
         </div>
       )}
     </div>
