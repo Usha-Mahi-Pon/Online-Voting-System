@@ -18,7 +18,6 @@ export default async function Result() {
   if (!showResults) {
     return (
       <div className={styles.container}>
-        <Sparkles />
         <div className={styles.title}>Results will be announced soon!</div>
         <div className={styles.message}>
           Please check back after {targetDate.toLocaleString()}.

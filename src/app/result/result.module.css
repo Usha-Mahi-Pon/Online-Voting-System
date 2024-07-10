@@ -1,14 +1,18 @@
 .container {
   text-align: center;
   font-size: 2vw;
-  height: 55vh;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
 }
 .title {
-  font-size: 4vh;
+  font-size: 5vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding-left: 30px;
+  text-align: center;
 }
 .result {
+  text-align: center;
   display: flex;
   flex-direction: column;
   font-size: 3vh;
@@ -21,9 +25,9 @@
 }
 @media (max-width: 360px) {
   .title {
-    font-size: 2vh;
+    font-size: 4vh;
   }
   .result {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 }
