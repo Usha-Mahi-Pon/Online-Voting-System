@@ -34,7 +34,7 @@ export const authConfig = {
         return false;
       }
       if (isonVotingPage && user.count >= 1) {
-        return false;
+        return Response.redirect(new URL("/dashboard", request.nextUrl));
       }
       return true;
     },

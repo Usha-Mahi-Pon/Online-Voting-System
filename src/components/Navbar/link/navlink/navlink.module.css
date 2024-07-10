@@ -5,13 +5,16 @@
 }
 
 .active {
-    
   background: linear-gradient(
     90deg,
     rgb(255, 146, 182) 20%,
     hsla(266, 75%, 55%, 1) 100%
   );
   color: white;
-
 }
-
+@media (max-width: 365px) {
+  .container {
+    padding: 10px 14px;
+    border-radius: 20px;
+  }
+}

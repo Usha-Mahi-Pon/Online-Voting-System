@@ -8,6 +8,8 @@
 
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
 }
 
@@ -49,17 +51,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .msgcontainer span {
   display: block;
   opacity: 0;
   animation: reveal 0.5s forwards var(--d);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @keyframes reveal {
@@ -75,7 +73,7 @@
 .welcome {
   display: inline-block;
   overflow: hidden;
-  font-size: 3.59vw;
+  font-size: 4vw;
   white-space: nowrap;
 }
 
@@ -200,15 +198,15 @@
 
 @media (max-width: 640px) {
   .welcome {
-    font-size: 4.6vw;
+    font-size: 2.1vh;
   }
   .msg {
-    font-size: 2.7vw;
+    font-size: 1.7vh;
   }
   .textcontainer {
-    font-size: 3.6vw;
+    font-size: 1.8vh;
   }
   .msgcontainer {
-    font-size: 2.8vw;
+    font-size: 2.2vh;
   }
 }
