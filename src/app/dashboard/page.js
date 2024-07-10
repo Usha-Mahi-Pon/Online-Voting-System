@@ -12,7 +12,7 @@ export default async function Dashboard() {
   return (
     <div>
       <div className={styles.header}>
-        <div className={styles.title}>
+        <div className={styles.title} style={{ textAlign: "center" }}>
           Pokémon World Championship 2024 - Kanto Region
         </div>
         <div style={{ textAlign: "center" }}>
