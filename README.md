@@ -23,7 +23,7 @@ A secure platform for voting. This system allows any user to visit the dashboard
 
 1. Clone the repository:
    bash
-   git clone https://github.com/yourusername/online-voting-system.git
+   git clone https://github.com/Usha-Mahi-Pon/Online-Voting-System.git
    cd online-voting-system
 2. Install the dependencies:
    bash
