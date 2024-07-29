@@ -19,6 +19,11 @@ A secure platform for voting. This system allows any user to visit the dashboard
 - CSS
 - MongoDB (MongoDB Atlas)
 
+ ## Application Link
+
+You can access the live application [here](https://online-voting-system-iota.vercel.app/).
+
+
 ## Installation
 
 1. Clone the repository:
